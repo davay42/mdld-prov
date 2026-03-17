@@ -132,17 +132,17 @@ Entities have a duration. Generation marks the beginning of an entity, whereas i
 **ActivityInfluence** {+prov:ActivityInfluence ?member .Class mdp:listed}
 **AgentInfluence** {+prov:AgentInfluence ?member .Class mdp:listed}
 
-Not yet inlined classes {?member .Class mdp:listed}
+Not yet inlined classes:
 
--   Association {=prov:Association}
--   Attribution {=prov:Attribution}
--   Delegation {=prov:Delegation}
--   Derivation {=prov:Derivation}
--   EntityInfluence {=prov:EntityInfluence}
--   Influence {=prov:Influence}
--   InstantaneousEvent {=prov:InstantaneousEvent}
--   Location {=prov:Location}
--   PrimarySource {=prov:PrimarySource}
--   Quotation {=prov:Quotation}
--   Revision {=prov:Revision}
--   Role {=prov:Role}
+-   Association {+prov:Association ?member .Class mdp:listed}
+-   Attribution {+prov:Attribution ?member .Class mdp:listed}
+-   Delegation {+prov:Delegation ?member .Class mdp:listed}
+-   Derivation {+prov:Derivation ?member .Class mdp:listed}
+-   EntityInfluence {+prov:EntityInfluence ?member .Class mdp:listed}
+-   Influence {+prov:Influence ?member .Class mdp:listed}
+-   InstantaneousEvent {+prov:InstantaneousEvent ?member .Class mdp:listed}
+-   Location {+prov:Location ?member .Class mdp:listed}
+-   PrimarySource {+prov:PrimarySource ?member .Class mdp:listed}
+-   Quotation {+prov:Quotation ?member .Class mdp:listed}
+-   Revision {+prov:Revision ?member .Class mdp:listed}
+-   Role {+prov:Role ?member .Class mdp:listed}
