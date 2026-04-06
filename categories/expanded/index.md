@@ -52,7 +52,7 @@ The following examples illustrate the expanded terms by elaborating the crime ch
 
 ### Example 2
 
-![example2](./example2.ttl)
+![example2](../../examples/example2.ttl)
 
 ![example2](./expanded-terms-example-bundlePost.svg)
 
@@ -61,23 +61,23 @@ published two versions of a blog for the National Newspaper, Inc.
 The diagrams in this document depict Entities as yellow ovals, Activities as blue rectangles,
 and Agents as orange pentagons. The responsibility properties are shown in pink. 
 
-![example2](./example2.md)
+![example2](../../examples/example2.md)
 
 
 ### Example 3
 
-![example3](./example3.md)
+![example3](../../examples/example3.md)
 
-![example3](./example3.ttl)
+![example3](../../examples/example3.ttl)
 
 ### Example 4
 
-![example4](./example4.md)
+![example4](../../examples/example4.md)
 
-![example4](./example4.ttl)
+![example4](../../examples/example4.ttl)
 
 ### Example 5
 
-![example5](./example5.md)
+![example5](../../examples/example5.md)
 
-![example5](./example5.ttl)
+![example5](../../examples/example5.ttl)

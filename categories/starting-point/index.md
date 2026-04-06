@@ -30,8 +30,8 @@ The properties rdf:type and rdfs:label are used to express prov:type and prov:la
 
 ### TTL
 
-![ttl](./example1.ttl)
+![ttl](../../examples/example1.ttl)
 
 ### MDLD
 
-![mdld](./example.md)
+![mdld](../../examples/example.md)
