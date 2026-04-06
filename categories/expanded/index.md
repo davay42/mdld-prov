@@ -64,6 +64,20 @@ and Agents as orange pentagons. The responsibility properties are shown in pink.
 ![example2](./example2.md)
 
 
-
 ### Example 3
 
+![example3](./example3.md)
+
+![example3](./example3.ttl)
+
+### Example 4
+
+![example4](./example4.md)
+
+![example4](./example4.ttl)
+
+### Example 5
+
+![example5](./example5.md)
+
+![example5](./example5.ttl)
