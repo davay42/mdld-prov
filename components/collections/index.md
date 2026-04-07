@@ -1,4 +1,5 @@
 [mdp] <https://mdld.js.org/prov/>
+[owl] <http://www.w3.org/2002/07/owl#>
 
 # Collections {=mdp:components#collections .mdp:Component label}
 
@@ -24,21 +25,10 @@ Inverse: [wasMemberOf] {prov:inverse}
 
 ## Summary
 
-The PROV-O Collections component enables provenance tracking for collections as first-class entities. Collections inherit all entity provenance capabilities (attribution, derivation, etc.) while adding membership relationships through `hadMember`.
+The PROV-O Collections component enables provenance tracking for collections as first-class entities, modeling how groups of items maintain their own evolution while tracking membership relationships. This component answers the essential question: "How do collections evolve, and what entities do they contain?"
 
-**Core Features:**
-- **Entity Collections**: Collections are entities with their own provenance
-- **Membership Relations**: `hadMember` links collections to constituent entities
-- **Evolution Modeling**: Supports dynamic membership changes and collection derivation
+Collections represent a powerful concept where entities themselves become members of larger, structured entities. This creates hierarchical provenance where collections can be tracked through their own lifecycle - creation, modification, and evolution - while simultaneously maintaining precise membership information about their constituent entities. The component provides the foundation for understanding complex systems where items are grouped, organized, and managed as coherent units.
 
-**Use Cases:**
-- Dataset versioning and lineage
-- Document repository management
-- Research data aggregation
-- Software dependency tracking
+The hadMember relationship establishes clear membership chains that support sophisticated analysis of collection evolution, item tracking, and organizational structure. The bidirectional properties enable flexible querying - both "What items does this collection contain?" and "What collections include this item?" - while the entity nature of collections ensures they inherit all provenance capabilities of individual entities, from attribution to derivation relationships.
 
-**Benefits:**
-- Complete provenance for both items and their groupings
-- Standardized collection vocabulary
-- Audit trails for composition and maintenance
-- Support for empty collections and dynamic membership
+By treating collections as entities with their own provenance, the component becomes essential for dataset management, repository systems, and research aggregation. It enables organizations to maintain complete audit trails for both individual items and their groupings, support complex organizational structures, and understand how collections evolve through addition, removal, and reorganization of their constituent entities.

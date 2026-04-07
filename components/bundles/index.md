@@ -1,4 +1,5 @@
 [mdp] <https://mdld.js.org/prov/>
+[owl] <http://www.w3.org/2002/07/owl#>
 
 # Bundles {=mdp:components#bundles .mdp:Component label}
 
@@ -20,25 +21,11 @@ A prov:Bundle is a named set of provenance descriptions, which may itself have p
 
 ## Summary
 
-The PROV-O Bundles component enables "provenance of provenance" by treating collections of provenance descriptions as entities themselves. This allows recursive provenance tracking where provenance records can have their own provenance.
+The PROV-O Bundles component enables "provenance of provenance" by treating collections of provenance descriptions as entities themselves. This powerful concept allows recursive provenance tracking where provenance records can have their own provenance, creating multi-layered documentation of documentation processes.
 
-**Core Concept:**
-- **Bundle as Entity**: Named sets of provenance descriptions that are themselves entities, enabling provenance of provenance
+At its core, bundles represent a sophisticated approach to provenance management where sets of provenance descriptions become first-class entities. This enables organizations to track not just what happened to their data and processes, but also track how their provenance records themselves evolve over time. Each bundle identifier represents a unique, immutable set of descriptions that can be referenced, versioned, and managed as distinct units of provenance information.
 
-**Key Characteristics:**
-- **Recursive Provenance**: Bundles can have their own attribution, derivation, and other provenance relationships
-- **Unique Identification**: Each bundle identifier represents a unique set of descriptions
-- **Format Agnostic**: Can contain PROV-O assertions or other provenance description formats
-- **Immutability**: Adding/removing descriptions creates a new distinct bundle
+The recursive nature of bundles provides the foundation for complex provenance scenarios. A bundle might contain provenance about data processing workflows, which itself could be part of a larger bundle describing organizational provenance policies. This creates hierarchical provenance structures that support sophisticated audit trails, compliance documentation, and multi-level accountability frameworks.
 
-**Use Cases:**
-- Provenance record versioning and lineage
-- Multi-layer provenance documentation
-- Provenance aggregation from multiple sources
-- Auditing provenance collection processes
-
-**Benefits:**
-- Complete provenance traceability
-- Support for provenance metadata
-- Hierarchical provenance organization
+By enabling provenance of provenance, the component becomes essential for organizations that need to track how their provenance systems change, evolve, and are governed. It supports complex scenarios like regulatory reporting where organizations must demonstrate not just data lineage, but also the evolution of their tracking and documentation practices. This recursive capability makes bundles uniquely powerful for establishing trust, maintaining auditability, and supporting sophisticated provenance analysis across multiple organizational and temporal dimensions.
 - Provenance collection provenance
