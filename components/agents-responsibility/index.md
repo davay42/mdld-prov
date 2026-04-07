@@ -38,7 +38,7 @@ Subclass of [Agent] {+prov:Agent ?subClassOf}
 ## Association flow
 ======================
 
-### wasAssociatedWith {=prov:wasAssociatedWith .owl:ObjectProperty label mdp:listed}
+### wasAssociatedWith {=prov:wasAssociatedWith .owl:ObjectProperty label}
 
 > An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity. {comment @en}
 
@@ -50,7 +50,7 @@ Sub-property: [wasAssociateFor] {+prov:wasAssociateFor ?subPropertyOf}
 
 Inverse: [wasAssociateFor] {prov:inverse}
 
-### qualifiedAssociation {=prov:qualifiedAssociation .owl:ObjectProperty label mdp:listed}
+### qualifiedAssociation {=prov:qualifiedAssociation .owl:ObjectProperty label}
 
 > If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent :ag; :foo :bar ]. {comment @en}
 
@@ -68,7 +68,7 @@ Sub-class of [AgentInfluence] {+prov:AgentInfluence ?subClassOf}
 
 > An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedAssociation [ a prov:Association; prov:agent :baker; :foo :bar ]. {comment @en}
 
-### hadPlan {=prov:hadPlan .owl:ObjectProperty label mdp:listed}
+### hadPlan {=prov:hadPlan .owl:ObjectProperty label}
 
 > The _optional_ Plan adopted by an Agent in Association with some Activity. Plan specifications are out of the scope of this specification. {comment @en}
 
@@ -84,7 +84,7 @@ Sub-class of [Entity] {+prov:Entity ?subClassOf}
 
 > There exist no prescriptive requirement on the nature of plans, their representation, the actions or steps they consist of, or their intended goals. Since plans may evolve over time, it may become necessary to track their provenance, so plans themselves are entities. Representing the plan explicitly in the provenance can be useful for various tasks: for example, to validate the execution as represented in the provenance record, to manage expectation failures, or to provide explanations. {comment @en}
 
-### hadRole {=prov:hadRole .owl:ObjectProperty label mdp:listed}
+### hadRole {=prov:hadRole .owl:ObjectProperty label}
 
 > The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ]. {comment @en}
 
@@ -103,7 +103,7 @@ See also [hadRole] {+prov:hadRole ?seeAlso}.
 ======================
 
 
-### actedOnBehalfOf {=prov:actedOnBehalfOf .owl:ObjectProperty label mdp:listed}
+### actedOnBehalfOf {=prov:actedOnBehalfOf .owl:ObjectProperty label}
 
 > An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity {comment @en}
 
@@ -113,7 +113,7 @@ It's qualified form is the [qualifiedDelegation] {+prov:qualifiedDelegation ?qua
 
 Inverse: not defined explicitly, rather a recommended name for use in additional ontologies if necessary - [hadDelegate] {prov:inverse}.
 
-### qualifiedDelegation {=prov:qualifiedDelegation .owl:ObjectProperty label mdp:listed}
+### qualifiedDelegation {=prov:qualifiedDelegation .owl:ObjectProperty label}
 
 > If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag; :foo :bar ]. {comment @en}
 
@@ -140,7 +140,7 @@ For example, a student acted on behalf of his supervisor, who acted on behalf of
 ## Attribution flow
 ===================
 
-### wasAttributedTo {=prov:wasAttributedTo .owl:ObjectProperty label mdp:listed}
+### wasAttributedTo {=prov:wasAttributedTo .owl:ObjectProperty label}
 
 Sub-property of [qualifiedInfluence] {+prov:qualifiedInfluence ?subPropertyOf}
 
@@ -152,7 +152,7 @@ May be qualified by [qualifiedAttribution] {+prov:qualifiedAttribution ?prov:qua
 
 Inverse: [qualifiedAttribution] {prov:inverse}
 
-### qualifiedAttribution {=prov:qualifiedAttribution .owl:ObjectProperty label mdp:listed}
+### qualifiedAttribution {=prov:qualifiedAttribution .owl:ObjectProperty label}
 
 > If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]. {comment @en}
 
@@ -177,7 +177,7 @@ Sub-class of [AgentInfluence] {+prov:AgentInfluence ?subClassOf}
 ## Influence flow
 =================
 
-### wasInfluencedBy {=prov:wasInfluencedBy .owl:ObjectProperty label mdp:listed}
+### wasInfluencedBy {=prov:wasInfluencedBy .owl:ObjectProperty label}
 
 > Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable. {comment @en}
 
@@ -230,13 +230,13 @@ Sub-class of [Influence] {+prov:Influence ?subClassOf}.
 > It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses. {comment @en}
 
 
-### influenced {=prov:influenced .owl:ObjectProperty label mdp:listed}
+### influenced {=prov:influenced .owl:ObjectProperty label}
 
 Inverse: [wasInfluencedBy] {prov:inverse} with a defined [inverse] {+prov:wasInfluencedBy ?owl:inverseOf}.
 
 See [Influence] {+prov:Influence ?prov:sharesDefinitionWith}
 
-### influencer {=prov:influencer .owl:ObjectProperty label mdp:listed}
+### influencer {=prov:influencer .owl:ObjectProperty label}
 
 > Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used. {comment @en}
 
@@ -249,7 +249,7 @@ Inverse: [hadInfluence] {prov:inverse}.
 > This property is used as part of the qualified influence pattern. Subclasses of prov:Influence use these subproperties to reference the resource (Entity, Agent, or Activity) whose influence is being qualified. {prov:editorialNote @en}
 
 
-### activity {=prov:activity .owl:ObjectProperty label mdp:listed}
+### activity {=prov:activity .owl:ObjectProperty label}
 
 Applies to [Activities] {+prov:Activity ?range} as a sub-property of [influencer] {+prov:influencer ?subPropertyOf} - it references an [Activity] that influenced a resource. 
 
@@ -259,7 +259,7 @@ Applies to [Activities] {+prov:Activity ?range} as a sub-property of [influencer
 
 Inverse: [activityOfInfluence] {prov:inverse}
 
-### agent {=prov:agent .owl:ObjectProperty label mdp:listed}
+### agent {=prov:agent .owl:ObjectProperty label}
 
 Points to [Agents] {+prov:Agent ?range} from the [AgentInfluence] {+prov:AgentInfluence ?domain} qualified relations that are sub-properties of the [influencer] {+prov:influencer ?subPropertyOf} property.
 
@@ -270,7 +270,7 @@ Points to [Agents] {+prov:Agent ?range} from the [AgentInfluence] {+prov:AgentIn
 Inverse: [agentOfInfluence] {prov:inverse}
 
 
-### entity {=prov:entity .owl:ObjectProperty label mdp:listed}
+### entity {=prov:entity .owl:ObjectProperty label}
 
 A qualified [EntityInfluence] {+prov:EntityInfluence ?domain} uses this relation to point to an [entity] {+prov:Entity} that influences an entity/agent/activity with some [influence] {+prov:influencer ?subPropertyOf}.
 

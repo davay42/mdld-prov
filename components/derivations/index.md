@@ -9,7 +9,7 @@ The second component of PROV-DM is concerned with: derivations of entities from 
 ## Derivation flow
 ==================
 
-### wasDerivedFrom {=prov:wasDerivedFrom .owl:ObjectProperty label mdp:listed}
+### wasDerivedFrom {=prov:wasDerivedFrom .owl:ObjectProperty label}
     
 > The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable. {comment @en}
 
@@ -23,7 +23,7 @@ Sub-property: [wasInfluencedBy] {+prov:wasInfluencedBy ?subPropertyOf}
 
 Inverse: [hadDerivation] {prov:inverse}
 
-### qualifiedDerivation {=prov:qualifiedDerivation owl:ObjectProperty label mdp:listed}
+### qualifiedDerivation {=prov:qualifiedDerivation owl:ObjectProperty label}
 
 > If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ]. {comment @en}
 
@@ -47,7 +47,7 @@ Sub-class of [EntityInfluence] {+prov:EntityInfluence ?subClassOf}.
 
 Has 3 sub-classes: [PrimarySource] {+prov:PrimarySource !subClassOf}, [Quotation] {+prov:Quotation !subClassOf} and [Revision] {+prov:Revision !subClassOf}.
 
-### hadGeneration {=prov:hadGeneration .owl:ObjectProperty label mdp:listed}
+### hadGeneration {=prov:hadGeneration .owl:ObjectProperty label}
 
 > The _optional_ Generation involved in an Entity's Derivation. {comment @en}
 
@@ -55,7 +55,7 @@ Points to an optional explicit [generation] {+prov:Generation ?prov:sharesDefini
 
 Inverse: [generatedAsDerivation] {prov:inverse}.
 
-### hadUsage {=prov:hadUsage .owl:ObjectProperty label mdp:listed}
+### hadUsage {=prov:hadUsage .owl:ObjectProperty label}
 
 > The _optional_ Usage involved in an Entity's Derivation. {comment @en}
 
@@ -67,7 +67,7 @@ Inverse: [wasUsedInDerivation] {prov:inverse}.
 ## Revision flow
 ================
 
-### wasRevisionOf {=prov:wasRevisionOf .owl:ObjectProperty label mdp:listed}
+### wasRevisionOf {=prov:wasRevisionOf .owl:ObjectProperty label}
 
 > A revision is a derivation that revises an entity into a revised version. {comment @en}
 
@@ -79,7 +79,7 @@ Sub-property of [wasDerivedFrom] {+prov:wasDerivedFrom ?subPropertyOf}.
 
 Inverse: [hadRevision] {prov:inverse}
 
-### qualifiedRevision {=prov:qualifiedRevision owl:ObjectProperty label mdp:listed}
+### qualifiedRevision {=prov:qualifiedRevision owl:ObjectProperty label}
 
 > If this Entity prov:wasRevisionOf Entity :e, then it can qualify how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity :e; :foo :bar ]. {comment @en}
 
@@ -103,7 +103,7 @@ Sub-class of [Derivation] {+prov:Derivation ?subClassOf}.
 ## Quotation flow
 =================
 
-### wasQuotedFrom {=prov:wasQuotedFrom .owl:ObjectProperty label mdp:listed}
+### wasQuotedFrom {=prov:wasQuotedFrom .owl:ObjectProperty label}
 
 > An entity is derived from an original entity by copying, or 'quoting', some or all of it. {comment @en}
 
@@ -115,7 +115,7 @@ Sub-property of [wasDerivedFrom] {+prov:wasDerivedFrom ?subPropertyOf}.
 
 Inverse: [quotedAs] {prov:inverse}
 
-### qualifiedQuotation {=prov:qualifiedQuotation owl:ObjectProperty label mdp:listed}
+### qualifiedQuotation {=prov:qualifiedQuotation owl:ObjectProperty label}
 
 > If this Entity prov:wasQuotedFrom Entity :e, then it can qualify how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo :bar ]. {comment @en}
 
@@ -139,7 +139,7 @@ Sub-class of [Derivation] {+prov:Derivation ?subClassOf}.
 ## Primary Source flow
 =======================
 
-### hadPrimarySource {=prov:hadPrimarySource .owl:ObjectProperty label mdp:listed}
+### hadPrimarySource {=prov:hadPrimarySource .owl:ObjectProperty label}
 
 Connects two [entities] {+prov:Entity ?domain ?range} with a source relation that is a sub-property of [wasDerivedFrom] {+prov:wasDerivedFrom ?subPropertyOf}.
 
@@ -147,7 +147,7 @@ Has a qualified form - [qualifiedPrimarySource] {+prov:qualifiedPrimarySource ?p
 
 Inverse: [wasPrimarySourceOf] {prov:inverse}
 
-### qualifiedPrimarySource {=prov:qualifiedPrimarySource owl:ObjectProperty label mdp:listed}
+### qualifiedPrimarySource {=prov:qualifiedPrimarySource owl:ObjectProperty label}
 
 > If this Entity prov:hadPrimarySource Entity :e, then it can qualify how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e; :foo :bar ]. {comment @en}
 
@@ -177,7 +177,7 @@ A primary source relation is a particular case of derivation of secondary materi
 ## Influence flow
 ==========
 
-### hadActivity {+prov:hadActivity .owl:ObjectProperty label mdp:listed}
+### hadActivity {+prov:hadActivity .owl:ObjectProperty label}
 
 > The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead). {comment}
 
@@ -191,7 +191,7 @@ Multidomain extension to an [influence] {+prov:Influence ?domain} with an [activ
 Inverse: [wasActivityOfInfluence] {prov:inverse}
 
 
-### qualifiedInfluence {=prov:qualifiedInfluence owl:ObjectProperty label mdp:listed}
+### qualifiedInfluence {=prov:qualifiedInfluence owl:ObjectProperty label}
 
 > Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable. {comment @en}
 

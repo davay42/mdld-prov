@@ -5,7 +5,7 @@
 ![](./component5.png)
 
 
-## alternateOf {=prov:alternateOf .owl:ObjectProperty label mdp:listed}
+## alternateOf {=prov:alternateOf .owl:ObjectProperty label}
 
 Connects two [entities] {+prov:Entity ?domain ?range} as describing the same thing from multiple perspectives - a sub-property of the [alternate] {+prov:alternate ?subPropertyOf} property - it's a [symmetrical] {+prov:alternateOf ?prov:inverse} relation.
 
@@ -13,7 +13,7 @@ Connects two [entities] {+prov:Entity ?domain ?range} as describing the same thi
 
 Related: [specializationOf] {+prov:specializationOf ?seeAlso}
 
-## specializationOf {=prov:specializationOf .owl:ObjectProperty label mdp:listed}
+## specializationOf {=prov:specializationOf .owl:ObjectProperty label}
 
 > An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity. {comment @en}
 

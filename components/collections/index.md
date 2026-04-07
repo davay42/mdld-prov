@@ -16,7 +16,7 @@ The prov:Collection [entity] {+prov:Entity ?subClassOf} class can be used to exp
 
 Has a subclass - **Empty Collection** {=prov:EmptyCollection .Class label !subClassOf} - *An empty collection is a collection without members.* {prov:definition @en}
 
-## hadMember {=prov:hadMember .owl:ObjectProperty label mdp:listed}
+## hadMember {=prov:hadMember .owl:ObjectProperty label}
 
 Connects a [Collection] {+prov:Collection ?domain ?prov:sharesDefinitionWith} to its [member] {+prov:Entity ?range} with a relation that is a sub-property of [wasInfluencedBy] {+prov:wasInfluencedBy ?subPropertyOf}.
 
