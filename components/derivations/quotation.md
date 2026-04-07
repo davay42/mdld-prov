@@ -35,3 +35,15 @@ Sub-class of [Derivation] {+prov:Derivation ?subClassOf}.
 > A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation. {prov:definition @en}
 
 > An instance of prov:Quotation provides additional descriptions about the binary prov:wasQuotedFrom relation from some taken prov:Entity from an earlier, larger prov:Entity. For example, :here_is_looking_at_you_kid prov:wasQuotedFrom :casablanca_script; prov:qualifiedQuotation [ a prov:Quotation; prov:entity :casablanca_script; :foo :bar ]. {comment @en}
+
+==============
+
+## Summary
+
+The quotation flow captures the referencing relationship between entities, modeling how one entity incorporates content from another through direct copying or citation. This flow answers the essential question: "What does this entity quote, and from what source material?"
+
+Quotation represents a specialized derivation where content is extracted from an original entity and incorporated into a new one, whether by the original author or another party. This creates clear attribution chains that enable tracking intellectual property, academic citations, and content reuse across diverse workflows. The flow provides the backbone for understanding how knowledge and creative works build upon existing sources.
+
+The wasQuotedFrom relationship establishes precise citation lineage that supports sophisticated analysis of content provenance, intellectual property tracking, and source attribution. The bidirectional properties enable flexible querying - both "What does this quote?" and "What quotes this source?" - while qualified Quotation classes enrich these relationships with contextual detail about the quoting process and circumstances.
+
+By capturing structured quotation relationships with contextual enhancement, the flow becomes essential for academic publishing, content management, and intellectual property governance. It enables organizations to maintain clear attribution trails, support citation analysis, and understand content reuse through precise quotation tracking.

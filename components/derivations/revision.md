@@ -36,3 +36,15 @@ Sub-class of [Derivation] {+prov:Derivation ?subClassOf}.
 
 > An instance of prov:Revision provides additional descriptions about the binary prov:wasRevisionOf relation from some newer prov:Entity to an earlier prov:Entity. For example, :draft_2 prov:wasRevisionOf :draft_1; prov:qualifiedRevision [ a prov:Revision; prov:entity :draft_1; :foo :bar ]. {comment @en}
 
+==============
+
+## Summary
+
+The revision flow captures the versioning relationship between entities, modeling how one entity becomes an updated version of another. This flow answers the essential question: "What is this entity a revision of, and what original content does it preserve?"
+
+Revision represents a specialized derivation where the new entity contains substantial content from its original while incorporating updates or corrections. This creates clear version chains that enable tracking document evolution, software releases, and content refinement across diverse workflows. The flow provides the backbone for understanding how entities evolve through controlled updates rather than complete transformations.
+
+The wasRevisionOf relationship establishes precise version lineage that supports sophisticated analysis of content evolution, change tracking, and version management. The bidirectional properties enable flexible querying - both "What is this a revision of?" and "What revisions exist for this entity?" - while qualified Revision classes enrich these relationships with contextual detail about the revision process and circumstances.
+
+By capturing structured version relationships with contextual enhancement, the flow becomes essential for document management, software versioning, and content governance. It enables organizations to maintain clear audit trails, support rollback capabilities, and understand content evolution through precise revision tracking.
+

@@ -58,3 +58,15 @@ It describes that an entity was [used] {+prov:Usage ?range ?prov:sharesDefinitio
 
 Inverse: [wasUsedInDerivation] {prov:inverse}.
 
+==============
+
+## Summary
+
+The derivation flow captures the fundamental transformation relationship between entities, modeling how one entity is created, updated, or constructed from another. This flow answers the essential question: "What was this entity derived from, and through what transformation process?"
+
+Derivation represents the core concept of entity transformation - whether through direct modification, computational processing, or creative construction. It establishes the foundational lineage that enables tracking how entities evolve, combine, or are repurposed across complex workflows. This flow provides the backbone for understanding data provenance, document evolution, and material transformation across diverse domains.
+
+The wasDerivedFrom relationship creates clear transformation chains that support sophisticated analysis of entity evolution, impact assessment, and dependency tracking. The bidirectional properties enable flexible querying - both "What was this derived from?" and "What was derived from this?" - while qualified Derivation classes enrich these relationships with contextual detail about generation and usage processes involved in transformation.
+
+By capturing the essential transformation relationships with contextual enhancement, the flow becomes the foundation for provenance analysis, audit trail maintenance, and process understanding. It enables organizations to answer critical questions about entity evolution, maintain comprehensive transformation histories, and support compliance requirements through detailed derivation tracking.
+
