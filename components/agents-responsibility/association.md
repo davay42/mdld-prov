@@ -64,3 +64,19 @@ Inverse: [wasRoleIn] {prov:inverse}.
 
 See also [hadRole] {+prov:hadRole ?seeAlso}.
 
+==============
+
+## Summary
+
+The association flow captures the responsibility relationship between agents and activities, modeling how agents are assigned responsibility for specific actions and the plans they follow. This flow answers the essential question: "Which agents are responsible for this activity, and what plans and roles guided their involvement?"
+
+Association represents the fundamental mechanism for assigning responsibility where agents have specific roles in activities and operate according to intended plans. This concept provides the structured framework for understanding not just that an agent was involved, but how they were involved - what capacity they served, what procedures they followed, and what goals they intended to achieve. By modeling associations with plans and roles, PROV-O enables sophisticated accountability frameworks that capture both responsibility and intent.
+
+The hadPlan relationship enables organizations to track the procedures and methodologies that guided activities, supporting compliance validation and process improvement. Plans can represent standard operating procedures, research methodologies, or automated algorithms, allowing organizations to validate that activities followed intended processes and manage expectation failures when deviations occur.
+
+The hadRole relationship provides contextual depth by specifying the function or capacity in which agents participated. Roles can represent job functions, system capacities, or contextual positions that clarify the nature of agent involvement. This enables precise attribution where multiple agents participate in the same activity with different responsibilities.
+
+Together, these association elements enable sophisticated provenance scenarios across diverse domains. Research workflows can track which researchers conducted analyses following specific protocols. Business processes can attribute activities to employees following standard operating procedures. Automated systems can record which software processes executed according to predefined algorithms.
+
+By providing comprehensive responsibility tracking with plans and roles, the association flow becomes essential for governance, compliance, and process improvement. It enables organizations to establish clear accountability chains, validate process adherence, and understand not just what happened, but how and why it happened according to established frameworks.
+
