@@ -1,4 +1,6 @@
 {
+	"name": "mdld-prov",
+	"version": "1.0.0",
 	"type": "module",
 	"dependencies": {
 		"n3": "^2.0.3"
