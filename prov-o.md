@@ -2168,7 +2168,7 @@ By treating collections as entities with their own provenance, the component bec
 
 ![example1](./examples/example1.ttl) {+mdp:examples#ttl1 ?member}
 
-[example1](./examples/example1.md) {+mdp:examples#md1 ?member}
+[example1](./example1.md) {+mdp:examples#md1 ?member}
 
 ## Example 2
 
